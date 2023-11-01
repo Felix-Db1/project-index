@@ -1,0 +1,4 @@
+*.log
+temp/
+hiragana-arcade/node_modules
+hiragana-arcade/package-lock.json
