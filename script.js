@@ -2,6 +2,8 @@ const indexContainer = document.querySelector(".index-container");
 const backdrop = document.querySelector(".backdrop");
 const hiraganaHangulBtn = document.querySelector("#hiragana-hangul-btn");
 const simonMinigameBtn = document.querySelector("#simon-minigame-btn");
+const hiraganaArcadeBtn = document.querySelector("#hiragana-arcade-btn");
+const hangulArcadeBtn = document.querySelector("#hangul-arcade-btn");
 
 const BACKDROP_TRANSITION_DELAY = 300;
 
@@ -27,6 +29,18 @@ hiraganaHangulBtn.addEventListener("click", () => {
   fadeInBackdrop();
 });
 
+hiraganaArcadeBtn.addEventListener("click", () => {
+  window.location.href = "https://hiragana-arcade.glitch.me/";
+});
+
+hangulArcadeBtn.addEventListener("click", () => {
+  window.location.href = "https://hangul-arcade.glitch.me/";
+});
+
+simonMinigameBtn.addEventListener("click", () => {
+  window.location.href = "https://felix-db1.github.io/project-index/simon-minigame";
+});
+
 backdrop.addEventListener("animationend", () => {
   completedBackdropAnimation = true;
 });
@@ -41,8 +55,4 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     fadeOutBackdrop();
   }
-});
-
-simonMinigameBtn.addEventListener("click", () => {
-  window.location.href = "https://felix-db1.github.io/project-index/simon-minigame";
 });
