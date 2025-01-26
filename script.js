@@ -44,5 +44,5 @@ document.addEventListener("keydown", (event) => {
 });
 
 simonMinigameBtn.addEventListener("click", () => {
-  window.location.href = "./simon-minigame/index.html";
+  window.location.href = "https://felix-db1.github.io/project-index/simon-minigame";
 });
