@@ -44,5 +44,5 @@ document.addEventListener("keydown", (event) => {
 });
 
 simonMinigameBtn.addEventListener("click", () => {
-  window.location.href = "./simon-minigame";
+  window.location.href = "./simon-minigame/index.html";
 });
