@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Felix Dubois" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Simon Minigame</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="images/ico_Favicon.svg?v=2" type="image/svg+xml" rel="icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+
+  <body class="flexbox-column ocean-blue-bg-color">
+    <dialog open class="modal-container">
+      <div class="welcome-modal flexbox-column navy-blue-bg-color">
+        <button class="close-modal-btn">
+          <img src="images/img_Times-sign-ocean-blue.png" alt="Times Sign" />
+          <img src="images/img_Times-sign-red.png" alt="Times Sign" />
+          <p class="visually-hidden">close button</p>
+        </button>
+        <p class="greeting-msg">Welcome to the "Simon Minigame"!</p>
+        <p class="introduction-msg">
+          Try to memorize and reproduce the ever-changing pattern of the buttons. If you make a mistake, you will have to repeat the whole
+          sequence. See how far you can push your short-term memory
+        </p>
+        <p class="continue-msg">Press "ESC" or the "close" button above to continue...</p>
+      </div>
+    </dialog>
+
+    <main class="game-content flexbox-column">
+      <p class="current-lvl">Level - 1</p>
+
+      <div class="player-health flexbox-row">
+        <img class="first-life" src="images/img_Heart.png" alt="Heart" />
+        <img class="second-life" src="images/img_Heart.png" alt="Heart" />
+        <img class="third-life" src="images/img_Heart.png" alt="Heart" />
+      </div>
+
+      <section class="grid-container navy-blue-bg-color">
+        <button class="first-game-btn">
+          <p class="visually-hidden">first game button</p>
+        </button>
+        <button class="second-game-btn">
+          <p class="visually-hidden">second game button</p>
+        </button>
+        <button class="third-game-btn">
+          <p class="visually-hidden">third game button</p>
+        </button>
+        <button class="fourth-game-btn">
+          <p class="visually-hidden">fourth game button</p>
+        </button>
+      </section>
+
+      <button class="start-btn">Start</button>
+      <button class="restart-btn hidden invisible">Try Again?</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
