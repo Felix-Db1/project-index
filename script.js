@@ -1,6 +1,7 @@
 const indexContainer = document.querySelector(".index-container");
 const backdrop = document.querySelector(".backdrop");
 const hiraganaHangulBtn = document.querySelector("#hiragana-hangul-btn");
+const simonMinigameBtn = document.querySelector("#simon-minigame-btn");
 
 const BACKDROP_TRANSITION_DELAY = 300;
 
@@ -40,4 +41,8 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     fadeOutBackdrop();
   }
+});
+
+simonMinigameBtn.addEventListener("click", () => {
+  window.location.href = "./simon-minigame";
 });
